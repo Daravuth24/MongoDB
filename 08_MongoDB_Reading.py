@@ -6,12 +6,12 @@ mydb = myclient["KIT1"]
 
 mycol = mydb["dse10"]
 
-myquery = {"name": "Hanritheasen"}
+# myquery = {"name": "Thearin"}
 
-y = mycol.find(myquery)
+# y = mycol.find(myquery)
 
-# x = mycol.find()
+x = mycol.find()
 
-for data in y:
+for data in x:
     print(data)
 

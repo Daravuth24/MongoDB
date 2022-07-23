@@ -6,8 +6,8 @@ mydb = myclient["KIT1"]
 
 mycol = mydb["dse10"]
 
-myquery = { "address": { "$regex": "^B"}}
-newvalue = {"$set": {"address": "Phnom Penh"}}
+myquery = { "address": { "$regex": "^P"}}
+newvalue = {"$set": {"address": "Battambang"}}
 
 mycol.update_many(myquery, newvalue)
 

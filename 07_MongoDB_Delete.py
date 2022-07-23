@@ -6,12 +6,12 @@ mydb = myclient["KIT1"]
 
 mycol = mydb["dse10"]
 
-myquery = {"name": "Panha"}
+# myquery = {"name": "Panha"}
 
-# myquery = {"address": {"$regex": "^P"}}
+myquery = {"address": {"$regex": "^B"}}
 
-x = mycol.delete_one(myquery)
+# x = mycol.delete_one(myquery)
 
-# x = mycol.delete_many(myquery)
+x = mycol.delete_many(myquery)
 
 print(x.deleted_count, "documents deleted.")
